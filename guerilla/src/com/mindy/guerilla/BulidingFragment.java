@@ -32,6 +32,8 @@ public class BulidingFragment extends Fragment {
 	public TextView tv_c5;
 	public TextView tv_c6;
 
+	public String CurrentDayOfWeek = "1";
+
 	public BulidingFragment() {
 		// this(R.color.white);
 	}
@@ -61,6 +63,7 @@ public class BulidingFragment extends Fragment {
 		// construct the RelativeLayout
 		// RelativeLayout relativeLayout = new RelativeLayout(getActivity());
 		TjuWeekNumber = TjuDateTime.getTjuWeekNumber();
+		CurrentDayOfWeek= TjuDateTime.getCurrentDayOfWeek();
 		// 查询数据
 		TjuSeatDao dao = new TjuSeatDao(getActivity());
 		queryInfos = dao.findByBuildAndWeek(getBuildingNumberById(mPosition), TjuWeekNumber);
@@ -109,12 +112,12 @@ public class BulidingFragment extends Fragment {
 
 			TjuSeatInfo info = queryInfos.get(position);
 			tv_className.setText(info.getClassName());
-			tv_c1.setText(info.getCn(TjuWeekNumber, "1"));
-			tv_c2.setText(info.getCn(TjuWeekNumber, "2"));
-			tv_c3.setText(info.getCn(TjuWeekNumber, "3"));
-			tv_c4.setText(info.getCn(TjuWeekNumber, "4"));
-			tv_c5.setText(info.getCn(TjuWeekNumber, "5"));
-			tv_c6.setText(info.getCn(TjuWeekNumber, "6"));
+			tv_c1.setText(info.getCn(CurrentDayOfWeek, "1"));
+			tv_c2.setText(info.getCn(CurrentDayOfWeek, "2"));
+			tv_c3.setText(info.getCn(CurrentDayOfWeek, "3"));
+			tv_c4.setText(info.getCn(CurrentDayOfWeek, "4"));
+			tv_c5.setText(info.getCn(CurrentDayOfWeek, "5"));
+			tv_c6.setText(info.getCn(CurrentDayOfWeek, "6"));
 
 			return convertView;
 		}

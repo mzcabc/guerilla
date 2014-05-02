@@ -31,7 +31,8 @@ public class MainActivity extends SlidingFragmentActivity {
 
 		// 提示周次
 		Toast.makeText(getApplicationContext(), "天大第" + TjuDateTime.getTjuWeekNumber() + "周", Toast.LENGTH_SHORT).show();
-
+		Toast.makeText(getApplicationContext(), "星期" + TjuDateTime.getCurrentDayOfWeek() + "", Toast.LENGTH_SHORT).show();
+		
 		initSlidingMenu(savedInstanceState);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
