@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="class_names">
+        <item>教室A</item>
+        <item>教室B</item>
+        <item>教室C</item>
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+
+</resources>

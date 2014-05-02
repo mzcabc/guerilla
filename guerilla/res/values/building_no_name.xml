@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="building_no_name">
+        <item id="0">1073</item>
+        <item id="1">0036</item>
+        <item id="2">0022</item>
+        <item id="3">1048</item>
+        <item id="4">0030</item>
+        <item id="5">0031</item>
+        <item id="6">0045</item>
+        <item id="7">1076</item>
+        <item id="8">1049</item>
+        <item id="9">0020</item>
+        <item id="10">0026</item>
+        <item id="11">1047</item>
+        <item id="12">0024</item>
+        <item id="13">1052</item>
+        <item id="14">1054</item>
+        <item id="15">1071</item>
+        <item id="16">0018</item>
+        <item id="17">0032</item>
+        <item id="18">0021</item>
+        <item id="19">0038</item>
+        <item id="20">0015</item>
+        <item id="21">1042</item>
+        <item id="22">1089</item>
+        <item id="23">1050</item>
+        <item id="24">1090</item>
+        <item id="25">1084</item>
+        <item id="26">1085</item>
+        <item id="27">1086</item>
+        <item id="28">1087</item>
+        <item id="29">1088</item>
+        <item id="30">1080</item>
+        <item id="31">1082</item>
+        <item id="32">1060</item>
+        <item id="33">0040</item>
+        <item id="34">1083</item>
+        <item id="35">1074</item>
+        <item id="36">1058</item>
+        <item id="37">1092</item>
+        <item id="38">1081</item>
+        <item id="39">1072</item>
+        <item id="40">1079</item>
+        <item id="41">1078</item>
+        <item id="42">1075</item>
+        <item id="43">1091</item>
+        <item id="44">0028</item>
+        <item id="45">1077</item>
+        <item id="46">1070</item>
+    </string-array>
+
+</resources>

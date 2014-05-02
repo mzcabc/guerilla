@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="building_pos_name">
+        <item id="0">01楼</item>
+        <item id="1">03楼</item>
+        <item id="2">04楼</item>
+        <item id="3">05楼</item>
+        <item id="4">06楼</item>
+        <item id="5">07楼</item>
+        <item id="6">08楼</item>
+        <item id="7">08楼后院</item>
+        <item id="8">10楼</item>
+        <item id="9">11楼</item>
+        <item id="10">12楼</item>
+        <item id="11">14楼</item>
+        <item id="12">15楼</item>
+        <item id="13">15楼英专</item>
+        <item id="14">16楼</item>
+        <item id="15">17楼</item>
+        <item id="16">18楼</item>
+        <item id="17">19楼</item>
+        <item id="18">20楼</item>
+        <item id="19">21楼</item>
+        <item id="20">23楼</item>
+        <item id="21">24楼</item>
+        <item id="22">25楼A区</item>
+        <item id="23">25楼B区</item>
+        <item id="24">25楼C区</item>
+        <item id="25">26楼A区</item>
+        <item id="26">26楼B区</item>
+        <item id="27">26楼C区</item>
+        <item id="28">26楼D区</item>
+        <item id="29">26楼E区</item>
+        <item id="30">北洋科学楼</item>
+        <item id="31">船海实验楼</item>
+        <item id="32">大活</item>
+        <item id="33">东阶</item>
+        <item id="34">港口实验室</item>
+        <item id="35">化工基础楼</item>
+        <item id="36">科图</item>
+        <item id="37">南开大学</item>
+        <item id="38">内燃机大楼</item>
+        <item id="39">实习大楼</item>
+        <item id="40">水利馆</item>
+        <item id="41">体育场</item>
+        <item id="42">土建馆</item>
+        <item id="43">网架楼</item>
+        <item id="44">西阶</item>
+        <item id="45">影视楼</item>
+        <item id="46">综合楼</item>
+    </string-array>
+
+</resources>
