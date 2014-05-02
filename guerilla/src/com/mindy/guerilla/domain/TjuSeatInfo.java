@@ -9,6 +9,8 @@ public class TjuSeatInfo {
 
 	// 样例 011100 111101 111101 110001 010101 001111 111111
 	public String getCn(String dayOfWeek, String classCount) {
+		infos = infos.replace("1", "√").replace("0", "×");
+
 		int dayOfWeekInt = Integer.parseInt(dayOfWeek);
 		int classCountInt = Integer.parseInt(classCount);
 		int basecount = 0;
