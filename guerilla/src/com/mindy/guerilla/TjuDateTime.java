@@ -27,8 +27,8 @@ public class TjuDateTime {
 
 		calendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
 		calendar.setFirstDayOfWeek(Calendar.MONDAY);
-		String dayOfWeek = String.valueOf(calendar.get(Calendar.DAY_OF_WEEK));
-		
+		String dayOfWeek = String.valueOf(calendar.get(Calendar.DAY_OF_WEEK) - 1);
+
 		return dayOfWeek;
 	}
 }
