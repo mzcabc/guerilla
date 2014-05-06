@@ -24,13 +24,16 @@ public class BulidingFragment extends Fragment {
 	List<TjuSeatInfo> queryInfos = new ArrayList<TjuSeatInfo>();
 	public String TjuWeekNumber = "1";
 
-	public TextView tv_className;
-	public TextView tv_c1;
-	public TextView tv_c2;
-	public TextView tv_c3;
-	public TextView tv_c4;
-	public TextView tv_c5;
-	public TextView tv_c6;
+	// public TextView tvHeader;
+
+	private ListViewHander hander;
+	// public TextView tv_className;
+	// public TextView tv_c1;
+	// public TextView tv_c2;
+	// public TextView tv_c3;
+	// public TextView tv_c4;
+	// public TextView tv_c5;
+	// public TextView tv_c6;
 
 	public String CurrentDayOfWeek = "1";
 
@@ -63,16 +66,30 @@ public class BulidingFragment extends Fragment {
 		// construct the RelativeLayout
 		// RelativeLayout relativeLayout = new RelativeLayout(getActivity());
 		TjuWeekNumber = TjuDateTime.getTjuWeekNumber();
-		CurrentDayOfWeek= TjuDateTime.getCurrentDayOfWeek();
+		CurrentDayOfWeek = TjuDateTime.getCurrentDayOfWeek();
 		// 查询数据
 		TjuSeatDao dao = new TjuSeatDao(getActivity());
 		queryInfos = dao.findByBuildAndWeek(getBuildingNumberById(mPosition), TjuWeekNumber);
 
 		ListView listView = (ListView) inflater.inflate(R.layout.list_grid, null);
 
+		View view = LayoutInflater.from(getActivity()).inflate(R.layout.list_header, null);
+		listView.addHeaderView(view);
+
 		listView.setAdapter(new SeatInfoAdaper());
 
 		return listView;
+	}
+
+	// 为适配器要用到的控件对象创建类
+	private class ListViewHander {
+		TextView tv_className;
+		TextView tv_c1;
+		TextView tv_c2;
+		TextView tv_c3;
+		TextView tv_c4;
+		TextView tv_c5;
+		TextView tv_c6;
 	}
 
 	private class SeatInfoAdaper extends BaseAdapter {
@@ -100,24 +117,35 @@ public class BulidingFragment extends Fragment {
 			// TODO Auto-generated method stub
 			if (convertView == null) {
 				convertView = getActivity().getLayoutInflater().inflate(R.layout.list_item, null);
+
 			}
 
-			tv_className = (TextView) convertView.findViewById(R.id.textView_className);
-			tv_c1 = (TextView) convertView.findViewById(R.id.textView_c1);
-			tv_c2 = (TextView) convertView.findViewById(R.id.textView_c2);
-			tv_c3 = (TextView) convertView.findViewById(R.id.textView_c3);
-			tv_c4 = (TextView) convertView.findViewById(R.id.textView_c4);
-			tv_c5 = (TextView) convertView.findViewById(R.id.textView_c5);
-			tv_c6 = (TextView) convertView.findViewById(R.id.textView_c6);
+			hander = new ListViewHander();
+
+			hander.tv_className = (TextView) convertView.findViewById(R.id.textView_className);
+			hander.tv_c1 = (TextView) convertView.findViewById(R.id.textView_c1);
+			hander.tv_c2 = (TextView) convertView.findViewById(R.id.textView_c2);
+			hander.tv_c3 = (TextView) convertView.findViewById(R.id.textView_c3);
+			hander.tv_c4 = (TextView) convertView.findViewById(R.id.textView_c4);
+			hander.tv_c5 = (TextView) convertView.findViewById(R.id.textView_c5);
+			hander.tv_c6 = (TextView) convertView.findViewById(R.id.textView_c6);
+			// tv_className = (TextView)
+			// convertView.findViewById(R.id.textView_className);
+			// tv_c1 = (TextView) convertView.findViewById(R.id.textView_c1);
+			// tv_c2 = (TextView) convertView.findViewById(R.id.textView_c2);
+			// tv_c3 = (TextView) convertView.findViewById(R.id.textView_c3);
+			// tv_c4 = (TextView) convertView.findViewById(R.id.textView_c4);
+			// tv_c5 = (TextView) convertView.findViewById(R.id.textView_c5);
+			// tv_c6 = (TextView) convertView.findViewById(R.id.textView_c6);
 
 			TjuSeatInfo info = queryInfos.get(position);
-			tv_className.setText(info.getClassName());
-			tv_c1.setText(info.getCn(CurrentDayOfWeek, "1"));
-			tv_c2.setText(info.getCn(CurrentDayOfWeek, "2"));
-			tv_c3.setText(info.getCn(CurrentDayOfWeek, "3"));
-			tv_c4.setText(info.getCn(CurrentDayOfWeek, "4"));
-			tv_c5.setText(info.getCn(CurrentDayOfWeek, "5"));
-			tv_c6.setText(info.getCn(CurrentDayOfWeek, "6"));
+			hander.tv_className.setText(info.getClassName());
+			hander.tv_c1.setText(info.getCn(CurrentDayOfWeek, "1"));
+			hander.tv_c2.setText(info.getCn(CurrentDayOfWeek, "2"));
+			hander.tv_c3.setText(info.getCn(CurrentDayOfWeek, "3"));
+			hander.tv_c4.setText(info.getCn(CurrentDayOfWeek, "4"));
+			hander.tv_c5.setText(info.getCn(CurrentDayOfWeek, "5"));
+			hander.tv_c6.setText(info.getCn(CurrentDayOfWeek, "6"));
 
 			return convertView;
 		}
