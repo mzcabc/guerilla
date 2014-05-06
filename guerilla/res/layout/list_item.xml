@@ -21,7 +21,7 @@
         <TextView
             android:id="@+id/textView_c1"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="上" />
@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/textView_c2"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="午" />
@@ -37,7 +37,7 @@
         <TextView
             android:id="@+id/textView_c3"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="下" />
@@ -45,7 +45,7 @@
         <TextView
             android:id="@+id/textView_c4"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="午" />
@@ -53,7 +53,7 @@
         <TextView
             android:id="@+id/textView_c5"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="晚" />
@@ -61,7 +61,7 @@
         <TextView
             android:id="@+id/textView_c6"
             android:layout_width="wrap_content"
-            android:layout_height="30dip"
+            android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:gravity="center"
             android:text="上" />

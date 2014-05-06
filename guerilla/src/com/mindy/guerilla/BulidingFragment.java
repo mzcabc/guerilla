@@ -73,7 +73,7 @@ public class BulidingFragment extends Fragment {
 
 		ListView listView = (ListView) inflater.inflate(R.layout.list_grid, null);
 
-		View view = LayoutInflater.from(getActivity()).inflate(R.layout.list_header, null);
+		View view = LayoutInflater.from(getActivity()).inflate(R.layout.list_item, null);
 		listView.addHeaderView(view);
 
 		listView.setAdapter(new SeatInfoAdaper());
