@@ -8,6 +8,7 @@ import com.mindy.guerilla.domain.TjuSeatInfo;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -73,8 +74,9 @@ public class BulidingFragment extends Fragment {
 
 		ListView listView = (ListView) inflater.inflate(R.layout.list_grid, null);
 
-		View view = LayoutInflater.from(getActivity()).inflate(R.layout.list_item, null);
-		listView.addHeaderView(view);
+		View headerView = LayoutInflater.from(getActivity()).inflate(R.layout.list_item, null);
+		headerView.setBackgroundColor(Color.parseColor("#99DAF2"));
+		listView.addHeaderView(headerView);
 
 		listView.setAdapter(new SeatInfoAdaper());
 
@@ -146,6 +148,13 @@ public class BulidingFragment extends Fragment {
 			hander.tv_c4.setText(info.getCn(CurrentDayOfWeek, "4"));
 			hander.tv_c5.setText(info.getCn(CurrentDayOfWeek, "5"));
 			hander.tv_c6.setText(info.getCn(CurrentDayOfWeek, "6"));
+
+			// 设置隔行颜色
+			if (position % 2 != 0) {
+				convertView.setBackgroundColor(Color.parseColor("#EBF8FC"));
+			} else {
+				convertView.setBackgroundColor(Color.parseColor("#D6F0FA"));
+			}
 
 			return convertView;
 		}
