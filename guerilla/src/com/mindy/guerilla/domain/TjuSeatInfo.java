@@ -8,6 +8,12 @@ public class TjuSeatInfo {
 	private String infos;
 
 	// 样例 011100 111101 111101 110001 010101 001111 111111
+	/**
+	 * 获取指定星期和班级的自习室信息
+	 * @param dayOfWeek
+	 * @param classCount
+	 * @return
+	 */
 	public String getCn(String dayOfWeek, String classCount) {
 		infos = infos.replace("1", "√").replace("0", "×");
 
