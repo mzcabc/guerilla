@@ -9,22 +9,165 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="vertical" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="有任何意见请联系我 QQ 1411910" />
-       <EditText 
-           android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:editable="false"
-            android:text="1411910" />
+            android:text="有任何意见请联系我"/>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="· QQ    1411910" />
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="· 微博 @心仍在执着" />
+
+		</LinearLayout>
+      
     </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="bbbbb" />
+        android:orientation="vertical"
+		android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+            android:text="ChangeLog" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginLeft="10dp">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="· v1.2" />
+
+				<TextView
+					android:layout_marginLeft="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="9dp"
+					android:text="2014.05.11" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="● 可以查看后两天的自习室信息了 !" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginLeft="10dp">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="· v1.1" />
+
+				<TextView
+					android:layout_marginLeft="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="9dp"
+					android:text="2014.05.10" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="● 去掉没有自习室的教学楼 !" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginLeft="10dp">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="· v1.0" />
+				
+				<TextView
+					android:layout_marginLeft="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="9dp"
+					android:text="2014.05.09" />
+				
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="● 第一个版本 !" />
+
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+    </LinearLayout>
 
 </LinearLayout>
