@@ -2,7 +2,10 @@ package com.mindy.guerilla;
 
 import java.io.IOException;
 
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -81,6 +84,12 @@ public class MainActivity extends SlidingActivity {
 			toggle();
 			// getSlidingMenu().showMenu();// show menu
 			// getSlidingMenu().showContent();//show content
+			return true;
+
+		case R.id.mainMenuAbout:
+			MyDialogFragment myDialogFragment = new MyDialogFragment();
+			myDialogFragment.show(getFragmentManager(), "about");
+
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
