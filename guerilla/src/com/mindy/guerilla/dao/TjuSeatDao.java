@@ -31,6 +31,15 @@ public class TjuSeatDao {
 		return result;
 	}
 
+	/**
+	 * 通过建筑编号和天大周数查询自习室数据
+	 * 
+	 * @param buildingNum
+	 *            建筑编号(String)
+	 * @param weekNum
+	 *            天大周数(String)
+	 * @return List<TjuSeatInfo>
+	 */
 	public List<TjuSeatInfo> findByBuildAndWeek(String buildingNum, String weekNum) {
 		SQLiteDatabase db = helper.getReadableDatabase();
 		List<TjuSeatInfo> seatInfos = new ArrayList<TjuSeatInfo>();
@@ -53,6 +62,24 @@ public class TjuSeatDao {
 		cursor.close();
 		db.close();
 		return seatInfos;
+	}
+
+	/**
+	 * 通过建筑编号和天大周数查询自习室数据
+	 * 
+	 * @param buildingNum
+	 *            建筑编号(int)
+	 * @param weekNum
+	 *            天大周数(int)
+	 * @return List<TjuSeatInfo>
+	 */
+	public List<TjuSeatInfo> findByBuildAndWeek(int buildingNum, int weekNum) {
+		String tmpStr = buildingNum + "";
+		if (tmpStr.length() == 2) {
+			return findByBuildAndWeek("00" + buildingNum, weekNum + "");
+		} else {
+			return findByBuildAndWeek(buildingNum + "", weekNum + "");
+		}
 
 	}
 }

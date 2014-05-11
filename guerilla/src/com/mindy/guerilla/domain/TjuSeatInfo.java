@@ -10,8 +10,11 @@ public class TjuSeatInfo {
 	// 样例 011100 111101 111101 110001 010101 001111 111111
 	/**
 	 * 获取指定星期和班级的自习室信息
+	 * 
 	 * @param dayOfWeek
+	 *            一星期的第几天(String)
 	 * @param classCount
+	 *            一天的第几节课(String)
 	 * @return
 	 */
 	public String getCn(String dayOfWeek, String classCount) {
@@ -47,6 +50,19 @@ public class TjuSeatInfo {
 		int reInt = basecount + classCountInt;
 		String info = String.valueOf(infos.charAt(reInt - 1));
 		return info;
+	}
+
+	/**
+	 * 获取指定星期和班级的自习室信息
+	 * 
+	 * @param dayOfWeek
+	 *            一星期的第几天(int)
+	 * @param classCount
+	 *            一天的第几节课(int)
+	 * @return
+	 */
+	public String getCn(int dayOfWeek, int classCount) {
+		return getCn(dayOfWeek + "", classCount + "");
 	}
 
 	public boolean genTjuSeatInfoId() {

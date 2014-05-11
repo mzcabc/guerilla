@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    <Preference
+        android:key="1073"
+        android:title="01楼" />
+    
+    <Preference
+        android:key="0036"
+        android:title="03楼" />
+    -->
+    <Preference
+        android:key="0022"
+        android:title="04楼" />
+    <Preference
+        android:key="1048"
+        android:title="05楼" />
+    <!--
+    <Preference
+        android:key="0030"
+        android:title="06楼" />
+    -->
+    <Preference
+        android:key="0031"
+        android:title="07楼" />
+    <Preference
+        android:key="0045"
+        android:title="08楼" />
+    <!--
+    <Preference
+        android:key="1076"
+        android:title="08楼后院" />
+     
+    <Preference
+        android:key="1049"
+        android:title="10楼" />
+    -->
+    <Preference
+        android:key="0020"
+        android:title="11楼" />
+    <Preference
+        android:key="0026"
+        android:title="12楼" />
+    <!--
+         <Preference
+        android:key="1047"
+        android:title="14楼" />
+    -->
+    <!--
+    <Preference
+        android:key="0024"
+        android:title="15楼" />
+    <Preference
+        android:key="1052"
+        android:title="15楼英专" />
+    -->
+    <Preference
+        android:key="1054"
+        android:title="16楼" />
+    <!--
+         <Preference
+        android:key="1071"
+        android:title="17楼" />
+    -->
+    <Preference
+        android:key="0018"
+        android:title="18楼" />
+    <Preference
+        android:key="0032"
+        android:title="19楼" />
+    <Preference
+        android:key="0021"
+        android:title="20楼" />
+    <Preference
+        android:key="0038"
+        android:title="21楼" />
+    <Preference
+        android:key="0015"
+        android:title="23楼" />
+    <Preference
+        android:key="1042"
+        android:title="24楼" />
+    <Preference
+        android:key="1089"
+        android:title="25楼A区" />
+    <Preference
+        android:key="1050"
+        android:title="25楼B区" />
+    <!--
+         <Preference
+        android:key="1090"
+        android:title="25楼C区" />
+    -->
+    <Preference
+        android:key="1084"
+        android:title="26楼A区" />
+    <Preference
+        android:key="1085"
+        android:title="26楼B区" />
+    <!--
+         <Preference
+        android:key="1086"
+        android:title="26楼C区" />
+    -->
+    <Preference
+        android:key="1087"
+        android:title="26楼D区" />
+    <!--
+         <Preference
+        android:key="1088"
+        android:title="26楼E区" />
+    -->
+    <!--
+         <Preference
+        android:key="1080"
+        android:title="北洋科学楼" />
+    -->
+    <Preference
+        android:key="1082"
+        android:title="船海实验楼" />
+    <Preference
+        android:key="1060"
+        android:title="大活" />
+    <!--
+         <Preference
+        android:key="0040"
+        android:title="东阶" />
+    -->
+    <!--
+         <Preference
+        android:key="1083"
+        android:title="港口实验室" />
+    -->
+    <!--
+         <Preference
+        android:key="1074"
+        android:title="化工基础楼" />
+    -->
+    <!--
+         <Preference
+        android:key="1058"
+        android:title="科图" />
+    -->
+    <Preference
+        android:key="1092"
+        android:title="南开大学" />
+    <!--
+         <Preference
+        android:key="1081"
+        android:title="内燃机大楼" />
+    -->
+    <Preference
+        android:key="1072"
+        android:title="实习大楼" />
+    <Preference
+        android:key="1079"
+        android:title="水利馆" />
+    <Preference
+        android:key="1078"
+        android:title="体育场" />
+    <!--
+         <Preference
+        android:key="1075"
+        android:title="土建馆" />
+    -->
+    <!--
+         <Preference
+        android:key="1091"
+        android:title="网架楼" />
+    -->
+    <Preference
+        android:key="0028"
+        android:title="西阶" />
+    <!--
+         <Preference
+        android:key="1077"
+        android:title="影视楼" />
+    -->
+    <Preference
+        android:key="1070"
+        android:title="综合楼" />
+
+</PreferenceScreen>
